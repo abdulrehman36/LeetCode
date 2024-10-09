@@ -18,5 +18,10 @@ class Solution(object):
 
 
 
+<<<<<<< HEAD
+=======
+solution_instance = Solution()
+
+>>>>>>> 87e7b06591c9a5a10920a40a45e75f1f10befcd8
 result = solution_instance.plusOne([9]) # 1 2 3 0
 print(result)
