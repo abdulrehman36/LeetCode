@@ -18,7 +18,5 @@ class Solution(object):
 
 
 
-solution_instance = Solution()
-
 result = solution_instance.plusOne([9]) # 1 2 3 0
 print(result)
