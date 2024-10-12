@@ -6,15 +6,13 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        for i in range(len(nums) - 1):
-            for x in range(i+1,len(nums)):
-                if nums[i] == nums[x]:
-                    return True
-
+        sorted = nums.sort()
+        for i in range(len(nums)-1):
+            if nums[i] == nums[i+1]:
+                return True
         return False
 
-
 solution_instance = Solution()
-result = solution_instance.containsDuplicate([1,2,3,4,5])
+result = solution_instance.containsDuplicate([1,2,3,4,5,1])
 
 print(result)
