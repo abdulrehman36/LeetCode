@@ -10,12 +10,12 @@ class Solution(object):
         if n == 2:
             return 2
 
-        # storing SP
+        # Create a DP array to store the results of subproblems
         dp = [0] * (n + 1)
         dp[1] = 1
         dp[2] = 2
 
-        # filling table based on the recurrence relation
+        # Fill the DP array based on the recurrence relation
         for i in range(3, n + 1):
             dp[i] = dp[i - 1] + dp[i - 2]
 
@@ -25,4 +25,6 @@ class Solution(object):
 
 # Testing the function
 solution = Solution()
-print(solution.climbStairs(3))
+print(solution.climbStairs(5))  # Change 5 to any number you want to test
+
+

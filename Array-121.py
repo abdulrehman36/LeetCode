@@ -10,12 +10,22 @@ class Solution(object):
         :type prices: List[int]
         :rtype: int
         """
-        for i in range(len(prices)-1):
-            if prices[i] < prices[i+1]:
-                return prices[i]
-        return 0
+        if not prices:
+            return 0
+
+        min_price = prices[0]  # Minimum price so far
+        max_profit = 0  # Maximum profit we can achieve
+
+        for price in prices[1:]:
+            # Update max profit if we sell at the current price
+            max_profit = max(max_profit, price - min_price)
+
+            # Update min price to ensure we're buying at the lowest possible price
+            min_price = min(min_price, price)
+
+        return max_profit
 
 solution_instance = Solution()
-result = solution_instance.containsDuplicate([1,2,3,4,5,1])
+result = solution_instance.maxProfit([1,2,3,4,5,1])
 
 print(result)
