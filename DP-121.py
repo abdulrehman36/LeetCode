@@ -4,7 +4,6 @@ class Solution(object):
         :type prices: List[int]
         :rtype: int
         """
-
         # base case
         if not prices or len(prices) == 1:
             return 0
@@ -25,5 +24,6 @@ class Solution(object):
 
 # Testing the function
 solution = Solution()
-print(solution.maxProfit([7,6,4,3,2,1]))
+print(solution.maxProfit([]))
 
+# TOO SLOW!!!!!!
