@@ -1,5 +1,6 @@
 # 455. Assign Cookies
 
+
 class Solution(object):
     def findContentChildren(self, g, s):
         """
@@ -7,3 +8,14 @@ class Solution(object):
         :type s: List[int]
         :rtype: int
         """
+
+        g.sort()
+        s.sort()
+
+
+
+
+
+
+
+
