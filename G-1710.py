@@ -37,6 +37,7 @@ class Solution(object):
 #     maxUnit += truckSize * units
 #     truckSize = 0  # Truck is full now
 
+# running time: O(nlogn) <- because of the sorting step which made it easier because then we could consider boxtypes that had the highest numofunits
 
 
 
